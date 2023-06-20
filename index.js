@@ -21,7 +21,7 @@ const pickable = viewer.context.items.pickableIfcModels;
 let model;
 
 async function loadIfc(url) {
-	await viewer.IFC.setWasmPath("/WIV-Visibility/..");
+	await viewer.IFC.setWasmPath("./");
 	model = await viewer.IFC.loadIfcUrl(url);
 	model.removeFromParent();
 
